@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-zona)']
+        sans: ['var(--font-zona)'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -18,4 +18,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
