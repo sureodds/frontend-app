@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${zonapro.variable} font-sans`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${zonapro.variable} font-sans`}>{children}</body>
     </html>
   );
 }

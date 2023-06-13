@@ -6,10 +6,11 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-zona)'],
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: '#10131e',
+        secondary: '#1a1e2d',
+        main: '#0888d2',
+        white: '#ffff',
       },
     },
   },
