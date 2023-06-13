@@ -3,7 +3,7 @@
   "description": "SureOdds",
   "version": "1.0.0",
   "private": true,
-  "author": "Caleb Benjamin <hello@calebbenjin.dev> (@calebbenjin)",
+  "author": "caleb benjamin <hello@calebbenjin.dev> (@calebbenjin)",
   "license": "MIT",
   "keywords": [
     "betting",
@@ -17,7 +17,7 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
