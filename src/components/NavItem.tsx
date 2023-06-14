@@ -8,7 +8,7 @@ const NavItem = ({ navItem }: any) => {
   // const isActive = router.asPath === href;
   const isCurrentRoute = pathname === `/${navItem.path}`;
   const classes = classNames({
-    'px-2 sm:px-6 justify-center sm:justify-start py-3 flex': true,
+    'px-6 sm:px-6 justify-start sm:py-3 py-2 flex': true,
     'text-gray-400 hover:text-main transform hover:translate-x-1 transition ease-in-out duration-100':
       !isCurrentRoute,
     'border-l-8 border-main bg-gradient-to-r from-linearMain to-transparent text-gray-100 shadow-lg':
@@ -18,9 +18,9 @@ const NavItem = ({ navItem }: any) => {
     <NextLink href={navItem.path} className={classes}>
       <div className="flex items-center">
         <div className="mr-3 sm:mr-4">
-          <div>{navItem.icon}</div>
+          <div className="text-xl">{navItem.icon}</div>
         </div>
-        <span className="block">{navItem.label}</span>
+        <span className="block sm:text-base text-sm">{navItem.label}</span>
       </div>
     </NextLink>
   );
