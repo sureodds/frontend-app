@@ -48,12 +48,13 @@ const navItems = [
 const MobileSidenav = ({ handleToggle, toggle }: any) => {
   return (
     <div
-      className={`h-screen w-full fixed left-0 top-0 right-0 z-10 transition ease-in-out duration-800 bg-gradient-to-r from-secondary to-transparent transform sm:translate-x-[-100rem] translate-x-${
-        toggle ? `0` : `[-100rem]`
+      className={`h-screen w-full fixed left-0 top-0 right-0 z-10 transition ease-in-out duration-800 bg-gradient-to-r from-secondary to-transparent transform sm:translate-x-[-100rem] translate-x-[${
+        toggle ? `0` : `-100rem`
+      }]
       }`}
     >
       <div
-        className={`bg-primary h-screen w-78 border-r border-gray-600 transform translate-x-0 sm:relative absolute left-0 transition ease-in-out delay-1000 duration-1000 scroll-y-auto`}
+        className={`bg-primary h-screen w-78 border-r border-gray-600 transform translate-x-0 sm:relative absolute left-0 transition ease-in-out delay-1000 duration-1000`}
       >
         <div>
           <div className="px-10 pt-10 mx-auto">
