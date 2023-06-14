@@ -6,7 +6,7 @@ import { ProfilePhotoTypes } from '../types';
 const ProfilePhoto = ({ imgUrl, username }: ProfilePhotoTypes) => {
   return (
     <>
-      <div className="mt-16 flex items-center justify-center relative h-16 w-20 mx-auto">
+      <div className="sm:mt-16 mt-10 flex items-center justify-center relative sm:h-16 sm:w-20 w-16 h-14 mx-auto">
         <Image
           src={imgUrl ? imgUrl : ProfileImage}
           alt={username ? username : `Profile Photo`}

@@ -48,13 +48,12 @@ const navItems = [
 const MobileSidenav = ({ handleToggle, toggle }: any) => {
   return (
     <div
-      className={`h-screen w-full fixed left-0 top-0 right-0 z-10 transition ease-in-out duration-800 bg-gradient-to-r from-secondary to-transparent transform sm:translate-x-[-100rem] translate-x-[${
-        toggle ? `0` : `-100rem`
-      }]
+      className={`h-screen w-full fixed left-0 top-0 right-0 z-10 transition ease-in-out duration-800 bg-gradient-to-r from-secondary to-transparent transform sm:translate-x-[-100rem] ${
+        toggle ? `translate-x-0` : `translate-x-[-100rem]`
       }`}
     >
       <div
-        className={`bg-primary h-screen w-78 border-r border-gray-600 transform translate-x-0 sm:relative absolute left-0 transition ease-in-out delay-1000 duration-1000`}
+        className={`bg-primary h-screen w-72 border-r border-gray-600 transform translate-x-0 sm:relative absolute left-0 transition ease-in-out delay-1000 duration-1000`}
       >
         <div>
           <div className="px-10 pt-10 mx-auto">
@@ -70,12 +69,12 @@ const MobileSidenav = ({ handleToggle, toggle }: any) => {
               ))}
               <button
                 type="button"
-                className="px-2 cursor-pointer flex mx-auto sm:px-6 justify-center sm:justify-start sm:mt-20 mt-10 items-center text-gray-400 hover:text-main transform hover:translate-x-1 transition ease-in-out duration-100"
+                className="cursor-pointer flex px-6 justify-center sm:justify-start sm:mt-20 mt-10 items-center text-gray-400 hover:text-main transform hover:translate-x-1 transition ease-in-out duration-100"
               >
                 <div className="mr-2 sm:mr-4">
-                  <RiLogoutCircleRLine />
+                  <RiLogoutCircleRLine className="text-xl" />
                 </div>
-                <span className="">Log out</span>
+                <span className="sm:text-base text-sm">Log out</span>
               </button>
             </NavItemContainer>
           </div>
