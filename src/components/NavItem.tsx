@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const NavItem = ({ navItem }: any) => {
+const NavItem = ({ navItem, onClick }: any) => {
   const pathname = usePathname();
   // const isActive = router.asPath === href;
   const isCurrentRoute = pathname === `/${navItem.path}`;
@@ -15,7 +15,7 @@ const NavItem = ({ navItem }: any) => {
       isCurrentRoute,
   });
   return (
-    <NextLink href={navItem.path} className={classes}>
+    <NextLink href={navItem.path} className={classes} onClick={onClick}>
       <div className="flex items-center">
         <div className="mr-3 sm:mr-4">
           <div className="text-xl">{navItem.icon}</div>
