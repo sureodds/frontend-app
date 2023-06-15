@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Sidenav, MobileSidenav } from '@/components';
-import { HiOutlineBars3BottomLeft } from 'react-icons/hi2';
+import { Sidenav, MobileSidenav, Header } from '@/components';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [toggle, setToggle] = useState(false);
@@ -11,15 +10,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <div className="bg-primary h-screen w-full">
-      <section className="flex h-screen w-full">
+    <div>
+      <section className="flex sm:h-screen h-full w-full overflow-hidden">
         <Sidenav />
         <MobileSidenav toggle={toggle} handleToggle={handleToggle} />
-        <main className="w-screen relative container">
-          <HiOutlineBars3BottomLeft
-            onClick={handleToggle}
-            className="absolute left-3 top-3 sm:hidden block text-main text-4xl cursor-pointer"
-          />
+        <main className="w-screen relative bg-primary overflow-y-auto">
+          <Header onClick={handleToggle} />
           {children}
         </main>
       </section>

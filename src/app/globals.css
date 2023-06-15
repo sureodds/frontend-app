@@ -8,6 +8,33 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #1a1e2d;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0888d2;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 5px -5px 5px #10131e;
+}
+
 /* START: General styles */
 /* .max-width {
   @apply max-w-[1440px] mx-auto;

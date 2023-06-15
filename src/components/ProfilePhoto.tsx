@@ -6,12 +6,12 @@ import { ProfilePhotoTypes } from '../types';
 const ProfilePhoto = ({ imgUrl, username }: ProfilePhotoTypes) => {
   return (
     <>
-      <div className="sm:mt-16 mt-10 flex items-center justify-center relative sm:h-16 sm:w-20 w-16 h-14 mx-auto">
+      <div className="sm:mt-16 mt-10 flex items-center justify-center relative sm:h-20 sm:w-20 w-16 h-16 mx-auto">
         <Image
           src={imgUrl ? imgUrl : ProfileImage}
           alt={username ? username : `Profile Photo`}
           fill
-          className="rounded-md border-4 border-main"
+          className="rounded-full border-4 border-main object-cover"
         />
       </div>
       <div>

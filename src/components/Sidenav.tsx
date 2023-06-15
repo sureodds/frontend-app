@@ -8,12 +8,12 @@ import { SlWallet } from 'react-icons/sl';
 import { RiLogoutCircleRLine, RiCloseLine } from 'react-icons/ri';
 
 const navItems = [
-  {
-    label: 'Dashboard',
-    path: 'dashboard',
-    icon: <RxDashboard />,
-    allowedRoles: ['user', 'admin'],
-  },
+  // {
+  //   label: 'Dashboard',
+  //   path: 'dashboard',
+  //   icon: <RxDashboard />,
+  //   allowedRoles: ['user', 'admin'],
+  // },
   {
     label: 'Leaderboard',
     path: 'dashboard/leaderboard',
@@ -21,16 +21,16 @@ const navItems = [
     allowedRoles: ['user', 'admin'],
   },
   {
-    label: 'Profile',
-    path: 'dashboard/profile',
-    icon: <RxAvatar />,
-    allowedRoles: ['admin'],
-  },
-  {
     label: 'Wallet',
     path: 'dashboard/wallet',
     icon: <SlWallet />,
     allowedRoles: ['user', 'admin'],
+  },
+  {
+    label: 'Profile',
+    path: 'dashboard/profile',
+    icon: <RxAvatar />,
+    allowedRoles: ['admin'],
   },
   {
     label: 'Settings',
