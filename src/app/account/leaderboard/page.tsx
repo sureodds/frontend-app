@@ -8,13 +8,13 @@ import { forecasters } from '../../../contants';
 const LeaderboardPage = () => {
   return (
     <section className="pb-20">
-      <div className="container grid grid-cols-2 gap-x-4">
+      {/* <div className="container grid grid-cols-2 gap-x-4">
         <Banner />
         <Banner />
-      </div>
-      <div className="container">
+      </div> */}
+      <div className="sm:px-10 px-4">
         {/* <SectionTitle icon={<RxActivityLog />} title="Leader Board" /> */}
-        <div className="grid grid-cols-2 gap-x-10 gap-x-4">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-10 gap-x-4">
           {forecasters.map((data) =>
             data?.level === 'vip' ? (
               <PlayerCardRow
@@ -36,7 +36,7 @@ const LeaderboardPage = () => {
             ) : null,
           )}
         </div>
-        <div className="grid grid-cols-2 gap-x-10 gap-x-4">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-10 gap-x-4">
           {forecasters.map((data) =>
             data?.level === 'sliver' ? (
               <PlayerCardRow

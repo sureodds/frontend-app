@@ -16,25 +16,25 @@ const navItems = [
   // },
   {
     label: 'Leaderboard',
-    path: 'dashboard/leaderboard',
+    path: 'account/leaderboard',
     icon: <RxActivityLog />,
     allowedRoles: ['user', 'admin'],
   },
   {
     label: 'Wallet',
-    path: 'dashboard/wallet',
+    path: 'account/wallet',
     icon: <SlWallet />,
     allowedRoles: ['user', 'admin'],
   },
   {
     label: 'Profile',
-    path: 'dashboard/profile',
+    path: 'account/profile',
     icon: <RxAvatar />,
     allowedRoles: ['admin'],
   },
   {
     label: 'Settings',
-    path: 'dashboard/settings',
+    path: 'account/settings',
     icon: <RxGear />,
     allowedRoles: ['user', 'admin'],
   },
@@ -49,7 +49,7 @@ const navItems = [
 const Sidenav = () => {
   return (
     <div
-      className={`bg-primary sm:h-screen sm:w-80 border-r border-gray-600 transform translate-x-[-17rem] sm:translate-x-0 sm:relative absolute left-0 transition ease-in-out duration-100`}
+      className={`bg-primary sm:h-screen sm:w-64 border-r border-gray-600 transform translate-x-[-17rem] sm:translate-x-0 sm:relative absolute left-0 transition ease-in-out duration-100`}
     >
       <div>
         <div className="px-10 pt-10 mx-auto">
