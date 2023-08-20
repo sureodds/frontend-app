@@ -1,7 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-. "$(dirname "$0")/common.sh"
-
-pnpm commitlint --edit $1
-npx --no -- commitlint --edit "$1"
-.git/hooks/commit-msg $1

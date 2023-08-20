@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 // import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Switch } from '@headlessui/react';
+// import { Switch } from '@headlessui/react';
 import {
   AccordionItem,
   InputField,
@@ -124,8 +124,8 @@ const AddPage = () => {
           </p> */}
           <div className="accordion">
             <div className="mb-10 w-full grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <SelectField data={people} label="Select Bookmarker" />
-              <SelectField data={people} label="Select Sport" />
+              {/* <SelectField data={people} label="Select Bookmarker" />
+              <SelectField data={people} label="Select Sport" /> */}
             </div>
             {[1, 3, 4, 5, 6].map((item, i) => (
               <AccordionItem
@@ -142,15 +142,14 @@ const AddPage = () => {
                       onSubmit={handleSubmit}
                       className="mx-auto mt-16 max-w-xl sm:mt-20"
                     >
-                      <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                      {/* <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
                           <InputField
                             placeholder="Email"
                             label="Email Address"
                             type="email"
-                            value={email}
-                            onChange={handleEmailChange}
-                            error={error && !email.trim() ? error : ''}
+                            ariaLabel="email"
+                            name="email"
                           />
                         </div>
                         <div>
@@ -158,9 +157,8 @@ const AddPage = () => {
                             placeholder="Name"
                             label="User Name"
                             type="text"
-                            value={name}
-                            onChange={handleNameChange}
-                            error={error && !name.trim() ? error : ''}
+                            ariaLabel="name"
+                            name="name"
                           />
                         </div>
                         <Switch.Group
@@ -197,7 +195,7 @@ const AddPage = () => {
                             .
                           </Switch.Label>
                         </Switch.Group>
-                      </div>
+                      </div> */}
                       <div className="mt-10">
                         <button
                           type="submit"
