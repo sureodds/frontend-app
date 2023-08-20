@@ -148,9 +148,8 @@ const AddPage = () => {
                             placeholder="Email"
                             label="Email Address"
                             type="email"
-                            value={email}
-                            onChange={handleEmailChange}
-                            error={error && !email.trim() ? error : ''}
+                            ariaLabel="email"
+                            name="email"
                           />
                         </div>
                         <div>
@@ -158,9 +157,8 @@ const AddPage = () => {
                             placeholder="Name"
                             label="User Name"
                             type="text"
-                            value={name}
-                            onChange={handleNameChange}
-                            error={error && !name.trim() ? error : ''}
+                            ariaLabel="name"
+                            name="name"
                           />
                         </div>
                         <Switch.Group
