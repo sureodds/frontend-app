@@ -1,5 +1,5 @@
-import { SectionTitle } from '@/components';
 import React from 'react';
+import { SectionTitle } from '@/components';
 import { SlWallet } from 'react-icons/sl';
 
 const WalletPage = () => {

@@ -20,7 +20,7 @@ const NavItem = ({ navItem, onClick }: any) => {
         <div className="mr-3 sm:mr-4">
           <div className="text-xl">{navItem.icon}</div>
         </div>
-        <span className="block sm:text-base text-sm">{navItem.label}</span>
+        <span className="block sm:text-md text-sm">{navItem.label}</span>
       </div>
     </NextLink>
   );
