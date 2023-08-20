@@ -9,15 +9,15 @@
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 10px;               /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-track {
-  background: orange;        /* color of the tracking area */
+  background: #cccc;        /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
   background-color: #1a1e2d;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid orange;  /* creates padding around scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+  border: 3px solid #cccc;  /* creates padding around scroll thumb */
 }
 
 /* width */
@@ -30,9 +30,13 @@ body::-webkit-scrollbar-thumb {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0888d2;
+  background: #3333;
   border-radius: 5px 0 0 5px;
   box-shadow: inset 5px -5px 5px #10131e;
+}
+
+.text-small {
+  font-size: 0.7rem;
 }
 
 /* START: General styles */

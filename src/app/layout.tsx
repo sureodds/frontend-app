@@ -1,7 +1,6 @@
 `use client`;
 import './globals.css';
-import localFont from '@next/font/local';
-import { ThemeProvider } from 'next-themes';
+import localFont from 'next/font/local';
 
 const zonapro = localFont({
   src: [

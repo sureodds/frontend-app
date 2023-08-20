@@ -12,7 +12,8 @@ module.exports = {
         secondary: '#1a1e2d',
         main: '#0888d2',
         linearMain: 'rgba(8,136,210,0.30015756302521013) 85%',
-        white: '#f3f4f6',
+        gray: '#f3f4f6',
+        white: '#ffff',
       },
       container: {
         padding: {

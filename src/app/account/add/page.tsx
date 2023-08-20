@@ -124,8 +124,8 @@ const AddPage = () => {
           </p> */}
           <div className="accordion">
             <div className="mb-10 w-full grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <SelectField data={people} label="Select Bookmarker" />
-              <SelectField data={people} label="Select Sport" />
+              {/* <SelectField data={people} label="Select Bookmarker" />
+              <SelectField data={people} label="Select Sport" /> */}
             </div>
             {[1, 3, 4, 5, 6].map((item, i) => (
               <AccordionItem

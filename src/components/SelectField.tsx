@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react';
-import { Listbox, Transition } from '@headlessui/react';
+// import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
 
 function classNames(...classes: string[]) {
@@ -9,10 +9,11 @@ function classNames(...classes: string[]) {
 export default function SelectField({ data, label }: any) {
   const [selected, setSelected] = useState(data[0]);
 
-  console.log(selected);
+  // console.log(selected);
 
   return (
-    <Listbox value={selected} onChange={setSelected}>
+    <>
+      {/* <Listbox value={selected} onChange={setSelected}>
       {({ open }) => (
         <div>
           <div>
@@ -98,6 +99,7 @@ export default function SelectField({ data, label }: any) {
           </div>
         </div>
       )}
-    </Listbox>
+      </Listbox> */}
+    </>
   );
 }
