@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 // import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Switch } from '@headlessui/react';
+// import { Switch } from '@headlessui/react';
 import {
   AccordionItem,
   InputField,
@@ -142,7 +142,7 @@ const AddPage = () => {
                       onSubmit={handleSubmit}
                       className="mx-auto mt-16 max-w-xl sm:mt-20"
                     >
-                      <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                      {/* <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
                           <InputField
                             placeholder="Email"
@@ -195,7 +195,7 @@ const AddPage = () => {
                             .
                           </Switch.Label>
                         </Switch.Group>
-                      </div>
+                      </div> */}
                       <div className="mt-10">
                         <button
                           type="submit"

@@ -50,7 +50,7 @@ const PasswordInput: React.FC<InputFieldProps> = ({
       <div className="flex items-center mb-2 justify-between">
         <label
           htmlFor={props.name}
-          className="block text-xs font-medium text-gray-700"
+          className="block text-xs text-darkGray"
         >
           {label}
         </label>
@@ -77,9 +77,9 @@ const PasswordInput: React.FC<InputFieldProps> = ({
           onClick={togglePasswordVisibility}
         >
           {showPassword ? (
-            <HiOutlineEyeSlash className="text-xl" />
-          ) : (
             <HiOutlineEye className="text-xl" />
+          ) : (
+            <HiOutlineEyeSlash className="text-xl" />
           )}
         </button>
       </div>

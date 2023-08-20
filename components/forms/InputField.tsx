@@ -16,10 +16,10 @@ const InputField: React.FC<InputFieldProps> = ({
   const [field, meta] = useField(props);
 
   return (
-    <div className="mb-4">
+    <div className="mb-5">
       <label
         htmlFor={props.name}
-        className="block text-xs mb-2 font-medium text-gray-700"
+        className="block text-xs mb-2 text-darkGray"
       >
         {label}
       </label>

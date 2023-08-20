@@ -1,29 +1,29 @@
-'use client';
-import React from 'react';
+'use client'
+import React from 'react'
+import ClipLoader from 'react-spinners/ClipLoader'
 
 interface ButtonProps {
-  type: any;
-  text: string;
-  loading: boolean;
+  type: any
+  text: string
+  loading?: boolean
 }
 
 const Button = ({ type, text, loading }: ButtonProps) => (
   <button
     type={type}
-    className="group relative flex justify-center py-2 px-4 text-sm font-medium rounded-md text-white bg-gradient focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-100 ease-in-out shadow-lg"
-  >
+    className='w-full bg-main text-white sm:py-3 py-2 font-bold rounded-md hover:bg-blue-400 transition duration-300'>
     {loading ? (
-      <span className="flex items-center">
-        <svg
-          className="animate-spin h-5 w-5 mr-3 ..."
-          viewBox="0 0 24 24"
-        ></svg>
-        <span className="ml-2">Loading...</span>
+      <span className='flex items-center pl-4'>
+        <ClipLoader size={20} color='#fff' />
+        <span className='ml-2'>Loading...</span>
       </span>
     ) : (
-      <span>{text}</span>
+      <>
+        <span className='font-bold'>{text}</span>{' '}
+        <span aria-hidden='true'>&rarr;</span>
+      </>
     )}
   </button>
-);
+)
 
-export default Button;
+export default Button
