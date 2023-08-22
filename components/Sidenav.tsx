@@ -8,48 +8,40 @@ import { SlWallet } from 'react-icons/sl';
 import { RiLogoutCircleRLine, RiCloseLine } from 'react-icons/ri';
 
 const navItems = [
-  // {
-  //   label: 'Dashboard',
-  //   path: 'dashboard',
-  //   icon: <RxDashboard />,
-  //   allowedRoles: ['user', 'admin'],
-  // },
   {
     label: 'Leaderboard',
-    path: 'account/leaderboard',
+    path: '/account/leaderboard',
     icon: <RxActivityLog />,
     allowedRoles: ['user', 'admin'],
+    id: `2309`,
   },
   {
     label: 'Wallet',
-    path: 'account/wallet',
+    path: '/account/wallet',
     icon: <SlWallet />,
     allowedRoles: ['user', 'admin'],
+    id: `2332`,
   },
   {
     label: 'Profile',
-    path: 'account/profile',
+    path: '/account/profile',
     icon: <RxAvatar />,
     allowedRoles: ['admin'],
+    id: `2769`,
   },
   {
     label: 'Settings',
-    path: 'account/settings',
+    path: '/account/settings',
     icon: <RxGear />,
     allowedRoles: ['user', 'admin'],
+    id: `3439`,
   },
-  // {
-  //   label: 'Users',
-  //   path: 'users',
-  //   // icon: faDoorOpen,
-  //   allowedRoles: ['admin'],
-  // },
 ];
 
 const Sidenav = () => {
   return (
     <div
-      className={`bg-primary sm:h-screen sm:w-64 border-r border-gray-600 transform translate-x-[-17rem] sm:translate-x-0 sm:relative absolute left-0 transition ease-in-out duration-100`}
+      className={`bg-primary sm:h-screen sm:w-60 border-r border-gray-600 transform translate-x-[-17rem] sm:translate-x-0 sm:relative absolute left-0 transition ease-in-out duration-100`}
     >
       <div>
         <div className="px-10 pt-10 mx-auto">
@@ -60,8 +52,8 @@ const Sidenav = () => {
         </div>
         <div>
           <NavItemContainer>
-            {navItems.map((items, i) => (
-              <NavItem key={i} navItem={items} />
+            {navItems.map((items) => (
+              <NavItem key={items.id} navItem={items} />
             ))}
             <button
               type="button"

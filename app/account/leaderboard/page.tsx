@@ -13,7 +13,7 @@ const LeaderboardPage = () => {
         <Banner />
       </div> */}
       <div className="lg:px-10 sm:px-6">
-        {/* <SectionTitle icon={<RxActivityLog />} title="Leader Board" /> */}
+        <SectionTitle icon={<RxActivityLog />} title="Leader Board" />
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-10 gap-x-4">
           {forecasters.map((data) =>
             data?.level === 'vip' ? (

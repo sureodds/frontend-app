@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation'
 import Button from '@/components/shared/Button'
 
 const validationSchema = Yup.object({
+  firstName: Yup.string().required('Firstname is required'),
   password: Yup.string().required('Password is required'),
   email: Yup.string()
     .email('Invalid email address')
@@ -21,6 +22,7 @@ const SignupPage = () => {
 
   // Form values
   const initialValues = {
+    firstName: '',
     email: '',
     password: '',
     referalCode: '',
@@ -51,12 +53,19 @@ const SignupPage = () => {
                   {/* Logo Icon */}
                   <div className='sm:w-5 sm:h-5 w-4 h-4 bg-main rounded-md mr-2'></div>
                   <p className='uppercase text-primary font-black sm:text-xl text-lg'>
-                    Sure<span className='text-main'>Odds</span>
+                    SureOdds
                   </p>
                 </div>
                 <h2 className='sm:text-2xl text-lg font-bold mb-6 text-main'>
                   Create Your Account
                 </h2>
+                <InputField
+                  label='Your First Name'
+                  name='firstName'
+                  type='text'
+                  placeholder='Your First Name'
+                  ariaLabel='firstName'
+                />
                 <InputField
                   label='Your Email Address'
                   name='email'

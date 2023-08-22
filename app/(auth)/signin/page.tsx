@@ -38,9 +38,6 @@ const SigninPage = () => {
   return (
     <div className='flex sm:flex-row flex-col h-screen'>
       {/* Left Side with Color */}
-      <div className='w-1/2 bg-primary'></div>
-
-      {/* Right Side with Form */}
       <Suspense fallback={<p>Loading feed...</p>}>
         <div className='sm:w-3/5 flex w-full h-screen items-center justify-center bg-white'>
           <Formik
@@ -106,6 +103,9 @@ const SigninPage = () => {
           </Formik>
         </div>
       </Suspense>
+
+      {/* Right Side with Form */}
+      <div className='w-1/2 bg-primary'></div>
     </div>
   )
 }
